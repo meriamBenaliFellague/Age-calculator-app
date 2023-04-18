@@ -11,11 +11,7 @@ const month = document.getElementById('month');
 const day = document.getElementById('day');
 var x; var y; var count1 = 0;var count2 = 0;
 
-
-    input1.style.color = "red";
-  
 function EmptyData() {
-    input1.style.backgroundColor = "blue";
     if(input1.value === 'DD' && input2.value === 'MM' && input3.value === 'YYYY')
     p.style.color = "hsl(0, 100%, 67%)";
     input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
