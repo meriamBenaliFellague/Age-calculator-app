@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+:root{
+    /*fonts*/
+    --font-family: 'Poppins';
+    --font-size: 32px;
+    --font-weight1: 400i;
+    --font-weight2: 700;
+    --font-weight3: 800;
+    /*colors*/
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Off-white);
+    display: grid;
+    place-items: center;
+    
+}
+.container{
+    background-color: var(--White);
+    width: 740px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 65.5px 65.5px 65.5px 65.5px 350px;
+    padding: 3rem;
+    padding-top: 0rem;
+    transform: translateY(-50%);
+    margin-top: 50%;
+    border-radius: 1rem;
+    border-bottom-right-radius: 10rem;
+}
+.text{
+    padding-top: 2.9rem;
+}
+.text > p{
+    font-family: 'poppins Bold';
+    font-weight: var(--font-weight2);
+    font-size: 0.9rem;
+    word-spacing: 8.5rem;
+    color: var(--Smokey-grey);
+}
+@font-face {
+    font-family: 'poppins Bold';
+    src: url('./assets/fonts/Poppins-Bold.ttf') format('opentype');
+    font-weight: 400;
+}
+.form{
+    margin-top: 0.5rem;
+}
+.form{
+    margin-top: 0.5rem;
+}
+#input-day{
+    font-family: 'poppins Bold';
+    width: 140px;
+    height: 60px;
+    margin-right: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight2);
+    padding-left: 1.2rem;
+    color: var(--Smokey-grey);
+    border: 0.5px solid var(--Light-grey);
+    border-radius: 0.5rem;
+}
+#input-month{
+    font-family: 'poppins Bold';
+    width: 140px;
+    height: 60px;
+    margin-right: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight2);
+    padding-left: 1.2rem;
+    color: var(--Smokey-grey);
+    border: 0.5px solid var(--Light-grey);
+    border-radius: 0.5rem;
+}
+#input-year{
+    font-family: 'poppins Bold';
+    width: 140px;
+    height: 60px;
+    font-size: 1.7rem;
+    font-weight: var(--font-weight2);
+    padding-left: 1.2rem;
+    color: var(--Smokey-grey);
+    border: 0.5px solid var(--Light-grey);
+    border-radius: 0.5rem;
+}
+img{
+    background-color: var(--Purple);
+    padding: 1.3rem;
+    border-radius: 50%;
+}
+.image > img{
+    margin-left: 86%;
+    margin-top: -1rem;
+    
+}
+.image{
+    cursor: pointer;
+}
+#box{
+    border-top: 1px solid var(--Light-grey);
+    width: 86%;
+    margin-top: -3rem;
+   
+}
+.Age{
+    font-size: 4rem;
+    margin-top: -1.5rem;
+}
+@font-face {
+    font-family: 'Poppins ExtraBold Italic';
+    src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+h2{
+    font-weight: var(--font-weight3);
+    font-family: 'Poppins ExtraBold Italic';
+}
+.h2{
+    margin-top: -2.3rem;
+}
+h2 > span{
+    letter-spacing: 1rem;
+    color: var(--Purple);
+}
+@font-face {
+    font-family: 'Poppins Italic';
+    src: url('./assets/fonts/Poppins-Italic.ttf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+p > span{
+  font-family: 'Poppins Italic';
+  font-size: 0.8rem;
+  color: var(--Light-red);
+}
+.massege{
+    display: grid;
+    grid-row: 3/4;
+    grid-template-columns: 168px 168px 200px;
+    margin-top: 0.7rem;
+}
+.mg1{
+    grid-column: 1/2;
+}
+.mg2{
+    grid-column: 2/3;
+}
+.mg3{
+    grid-column: 3/4;
+}
+@media (max-width: 550px) {
+    .container{
+        width: 90%;
+        height: 800px;
+        margin-top: 90%;
+        border-radius: 1.5rem;
+        border-bottom-right-radius: 11rem;
+        grid-template-rows: 87.5px 87.5px 87.5px 87.5px 450px;
+    }
+    .text{
+        padding-top: 4rem;
+        
+        
+    }
+    .form{
+        margin-top: 1rem;
+    }
+    .text > p{
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+        word-spacing: 7rem;
+    }
+    #input-day{
+        height: 80px;
+    }
+    #input-month{
+        height: 80px;
+    }
+    #input-year{
+        height: 80px;
+    }
+    .image > img{
+        margin-left: 35%;
+        margin-top: -1rem;
+    }
+    .Age{
+        margin-top: 1.5rem;
+    }
+    h2 > span{
+        letter-spacing: 0rem;
+    }
+}
