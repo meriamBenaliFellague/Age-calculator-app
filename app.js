@@ -89,21 +89,21 @@ function CorrectData() {
 }
 img.addEventListener('click', CorrectData);
 function WrongData() {
-    if(Number(input1.value) > 30 ){ 
+    if(Number(input1.value) > 30 || Number(input1.value) < 1){ 
     p.style.color = "hsl(0, 100%, 67%)";
     input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
     input2.style.border = "0.5px solid hsl(0, 100%, 67%)";
     input3.style.border = "0.5px solid hsl(0, 100%, 67%)";
     ipt1.textContent = 'Must be a valid day';
     }
-    if (Number(input2.value) > 12) {
+    if (Number(input2.value) > 12 || Number(input2.value) < 1) {
         p.style.color = "hsl(0, 100%, 67%)";
         input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
         input2.style.border = "0.5px solid hsl(0, 100%, 67%)";
         input3.style.border = "0.5px solid hsl(0, 100%, 67%)";
         ipt2.textContent = 'Must be a valid month';
     }
-    if (Number(input3.value) > 2023) {
+    if (Number(input3.value) > 2023 || Number(input3.value) < 1) {
         p.style.color = "hsl(0, 100%, 67%)";
         input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
         input2.style.border = "0.5px solid hsl(0, 100%, 67%)";
