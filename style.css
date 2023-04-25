@@ -94,6 +94,15 @@ body{
     border: 0.5px solid var(--Light-grey);
     border-radius: 0.5rem;
 }
+#input-day:hover{
+    border: 0.5px solid var(--Purple);
+}
+#input-month:hover{
+    border: 0.5px solid var(--Purple);
+}
+#input-year:hover{
+    border: 0.5px solid var(--Purple);
+}
 img{
     background-color: var(--Purple);
     padding: 1.3rem;
@@ -103,6 +112,9 @@ img{
     margin-left: 86%;
     margin-top: -1rem;
     
+}
+img:hover{
+    background-color: var(--Off-black);
 }
 .image{
     cursor: pointer;
