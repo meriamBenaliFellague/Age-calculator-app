@@ -9,19 +9,21 @@ const ipt3 = document.getElementById('ipt3');
 const year = document.getElementById('year');
 const month = document.getElementById('month');
 const day = document.getElementById('day');
+
 var x; var y; var count1 = 0;var count2 = 0;
 
 function EmptyData() {
     if(input1.value === 'DD' && input2.value === 'MM' && input3.value === 'YYYY')
-    p.style.color = "hsl(0, 100%, 67%)";
-    input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
-    input2.style.border = "0.5px solid hsl(0, 100%, 67%)";
-    input3.style.border = "0.5px solid hsl(0, 100%, 67%)";
-    ipt1.textContent = 'This field is required';
-    ipt2.textContent = 'This field is required';
-    ipt3.textContent = 'This field is required';
+       p.style.color = "hsl(0, 100%, 67%)";
+       input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
+       input2.style.border = "0.5px solid hsl(0, 100%, 67%)";
+       input3.style.border = "0.5px solid hsl(0, 100%, 67%)";
+       ipt1.textContent = 'This field is required';
+       ipt2.textContent = 'This field is required';
+       ipt3.textContent = 'This field is required';
 }
 img.addEventListener('click', EmptyData); 
+
 function CorrectData() {
     if (Number(input1.value) <= 30 && Number(input2.value) <= 12 && Number(input3.value) <= 2023) {
         y= 18 - Number(input1.value);
@@ -88,13 +90,14 @@ function CorrectData() {
     }
 }
 img.addEventListener('click', CorrectData);
+
 function WrongData() {
     if(Number(input1.value) > 30 || Number(input1.value) < 1){ 
-    p.style.color = "hsl(0, 100%, 67%)";
-    input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
-    input2.style.border = "0.5px solid hsl(0, 100%, 67%)";
-    input3.style.border = "0.5px solid hsl(0, 100%, 67%)";
-    ipt1.textContent = 'Must be a valid day';
+       p.style.color = "hsl(0, 100%, 67%)";
+       input1.style.border = "0.5px solid hsl(0, 100%, 67%)";
+       input2.style.border = "0.5px solid hsl(0, 100%, 67%)";
+       input3.style.border = "0.5px solid hsl(0, 100%, 67%)";
+       ipt1.textContent = 'Must be a valid day';
     }
     if (Number(input2.value) > 12 || Number(input2.value) < 1) {
         p.style.color = "hsl(0, 100%, 67%)";
